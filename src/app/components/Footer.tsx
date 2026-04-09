@@ -13,14 +13,14 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-500/50">
-                <span className="text-white text-xl font-bold">C</span>
+                <span className="text-white text-xl font-bold">F</span>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                CyberStore
+                FXoolStore
               </span>
             </div>
             <p className="text-gray-400 text-sm">
-              Premium digital assets for designers and developers. Elevate your projects with our curated collection.
+              Premium tools for forex trader. Elevate your trades with our curated tools collection.
             </p>
             <div className="flex space-x-3">
               {[Twitter, Github, Linkedin, Instagram].map((Icon, idx) => (
@@ -39,7 +39,7 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              {['UI Kits', 'Icons', 'Templates', 'Fonts', 'Graphics', '3D Assets'].map((item) => (
+              {['Latest Products', 'Indicator', 'Group buy', 'Pre Order', 'MT4', 'MT5'].map((item) => (
                 <li key={item}>
                   <Link to="/products" className="text-gray-400 hover:text-white text-sm transition-colors">
                     {item}
@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 CyberStore. All rights reserved.
+            © 2024 FXtoolStore. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">

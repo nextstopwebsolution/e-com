@@ -137,7 +137,7 @@ export function Products() {
                 {/* Clear Filters */}
                 <Button
                   variant="outline"
-                  className="w-full border-white/20 text-white hover:bg-white/10"
+                  className="w-full border-white/20 text-black hover:bg-white/10"
                   onClick={() => {
                     setSelectedCategories([]);
                     setPriceRange([0, 100]);
