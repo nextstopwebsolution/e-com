@@ -39,14 +39,14 @@ export function Home() {
             {/* Main heading */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Premium Digital Assets
+                Premium Forex Tools
               </span>
               <br />
-              <span className="text-white">for Creators</span>
+              <span className="text-white">for Traders</span>
             </h1>
 
             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-              Discover thousands of high-quality UI kits, templates, icons, and design resources to accelerate your projects.
+              While trading Forex, experience does play a crucial role, but it is also essential to have access to a few tools which may help you analyse the markets and support your decision-making process.
             </p>
 
             {/* CTA Buttons */}
@@ -57,16 +57,14 @@ export function Home() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                View Demo
-              </Button>
+              
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
               {[
                 { label: 'Products', value: '2,000+' },
-                { label: 'Creators', value: '50K+' },
+                { label: 'Traders', value: '50K+' },
                 { label: 'Downloads', value: '1M+' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
@@ -86,8 +84,8 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-2">Featured Products</h2>
-              <p className="text-gray-400">Hand-picked premium assets for your next project</p>
+              <h2 className="text-3xl font-bold text-white mb-2">Best Selling Products</h2>
+              <p className="text-gray-400">Premium tools for your next trading session</p>
             </div>
             <Link to="/products">
               <Button variant="ghost" className="text-purple-400 hover:text-purple-300">
@@ -110,7 +108,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">Browse by Category</h2>
-            <p className="text-gray-400">Explore our diverse collection of digital products</p>
+            <p className="text-gray-400">Explore our diverse collection of forex tools</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -122,7 +120,7 @@ export function Home() {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <div className="text-3xl">{category.icon === 'Layout' ? '📐' : category.icon === 'Sparkles' ? '✨' : category.icon === 'FileText' ? '📄' : category.icon === 'Type' ? '🔤' : category.icon === 'Palette' ? '🎨' : category.icon === 'Box' ? '📦' : category.icon === 'Monitor' ? '🖥️' : '🎨'}</div>
+                    <div className="text-3xl">{category.icon === 'Layout' ? '🤖' : category.icon === 'Sparkles' ? '📈' : category.icon === 'FileText' ? '📄' : category.icon === 'Type' ? '🏷️' : category.icon === 'Palette' ? '👨🏻‍💻' : category.icon === 'Box' ? '👩🏻‍💻' : category.icon === 'Monitor' ? '👨🏻‍💻' : '👩🏻‍💻'}</div>
                   </div>
                   <h3 className="font-semibold text-white mb-1">{category.name}</h3>
                   <p className="text-sm text-gray-400">{category.count} items</p>
@@ -138,8 +136,8 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-2">Best Sellers</h2>
-              <p className="text-gray-400">Most popular products loved by our community</p>
+              <h2 className="text-3xl font-bold text-white mb-2">Latest Products</h2>
+              <p className="text-gray-400">products loved by our community</p>
             </div>
             <Link to="/products">
               <Button variant="ghost" className="text-purple-400 hover:text-purple-300">
@@ -165,12 +163,12 @@ export function Home() {
               {
                 icon: Zap,
                 title: 'Instant Downloads',
-                description: 'Get your products immediately after purchase. No waiting required.',
+                description: 'Get your tools immediately after purchase. No waiting required.',
               },
               {
                 icon: Shield,
                 title: 'Quality Guaranteed',
-                description: 'All products are reviewed and verified by our expert team.',
+                description: 'All tools are reviewed and verified by our expert team.',
               },
               {
                 icon: TrendingUp,
